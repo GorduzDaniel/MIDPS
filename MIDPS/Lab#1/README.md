@@ -21,4 +21,10 @@ pe axa Y, iar in cazul graficului cu ajutorul functiei MoveTo(x,y) cream puncte 
 Toate acestea sunt in dependenta de Timer-ul specificat.
 
 ## Note:
-
+  Procesul elaborarii formelor si butoanelor a fost posibila datorita procesului "drag and drop" al mediului de programare  Borland C++ Builder.
+  Cronometrul lucreaza pe baza a 3 variabile: min, sec, zec. Odata ce valoarea variabilei sec=59 el va incrementa min++ si respectiv 
+sec=0 s. a. m. d.
+  Linia graului se deplaseaza pe axa X in dependenta de timp, iar pe axa Y in conformitate cu valorile random, din functia rand().
+  
+**Concluzie**
+  In urma efectuarii acestui laborator am facut cunostinta cu posibilitatile de creare a unei aplicatii cu ajutorul Mediul de dezvoltare Borland C++ Builder. Acesta este un mediu orientat pe obiect, forme si evenimente. Include unelte care permit dezvoltarea vizuală bazată pe drag-and-drop, făcând programarea mai facilă prin implementarea unui GUI builder WYSIWYG în IDE. Aceasta mi-a permis sa creez o aplicatie in Windows cu numar minim de cod.  
