@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Modul de efectuare a laboratorului nr. 1 
 
 Continutul:
@@ -29,3 +30,7 @@ sec=0 s. a. m. d.
 **Concluzie**
 
   In urma efectuarii acestui laborator am facut cunostinta cu posibilitatile de creare a unei aplicatii cu ajutorul Mediul de dezvoltare Borland C++ Builder. Acesta este un mediu orientat pe obiect, forme si evenimente. Include unelte care permit dezvoltarea vizuală bazată pe drag-and-drop, făcând programarea mai facilă prin implementarea unui GUI builder WYSIWYG în IDE. Aceasta mi-a permis sa creez o aplicatie in Windows cu numar minim de cod.  
+=======
+# MIDPS
+Gorduz Daniel
+>>>>>>> 32f9dc518dafce8968746e615ed7fc0b3fe24519
