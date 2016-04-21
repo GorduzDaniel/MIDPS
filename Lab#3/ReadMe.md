@@ -11,7 +11,8 @@
 #Despre:
 --
 	Laboratorul dat are tematica GUI development:
-Sarcinile lucrarii: 
+Sarcinile lucrarii:
+
 1. Realizeaza un simplu GUI Calculator;
  
 2. Operatiile simple: +,-,*,/,putere,radical, InversareSemn(+/-), operatii cu numere zecimale;
