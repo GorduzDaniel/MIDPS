@@ -15,6 +15,7 @@ namespace Calc
         Double value = 0;
         String operation = "";
         bool oper_pressed = false;
+        bool number_pressed = false;
 
         public Form1()
         {
@@ -26,7 +27,7 @@ namespace Calc
             if ((result.Text == "0")||(oper_pressed))
                 result.Clear();
            Button b = (Button)sender;
-
+            number_pressed = true; 
             if (b.Text == ",")
             {
                 if (!result.Text.Contains(","))
@@ -48,11 +49,15 @@ namespace Calc
 
         private void oper_click(object sender, EventArgs e)
         {
-            Button b = (Button)sender;
-            operation = b.Text;
-            value = Double.Parse(result.Text);
-            oper_pressed = true;
-            equas.Text = value + "" + operation;
+            if (number_pressed)
+            {
+                Button b = (Button)sender;
+                operation = b.Text;
+                value = Double.Parse(result.Text);
+                oper_pressed = true;
+                equas.Text = value + "" + operation;
+            }
+            
         }
 
         private void Button17_Click(object sender, EventArgs e)
