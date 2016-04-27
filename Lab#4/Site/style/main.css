@@ -1,0 +1,112 @@
+body{
+	background-image: url("../img/bird.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#feed a{
+	text-decoration: none;
+	color: #015571;
+}
+#line{
+	border-bottom: solid;
+	border-bottom-color: #015571;
+	margin: 0 0%;
+	width: 100%;
+	float: left;
+}
+h1{
+	font-family: Freestyle Script;
+	font-size: 80px;
+	color: rgb(1,85,133);
+	text-align: center;
+	margin: 0;
+}
+h2{
+	font-family: papyrus;
+	font-size: 30px;
+	color: rgb(236,139,38);
+	margin-top: 60px;
+}
+li{
+	margin-left: 230px;
+	border-style: solid;
+	border-color: rgb(236,139,38);
+
+}
+ul#menu li{
+	display: inline;
+}
+ul#menu li a{
+	background-color: rgb(236,139,38);
+	color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 100px;
+
+    transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+}
+ul#menu li a:hover {
+    background-color: #015571;
+}
+p.order {
+	color: #5B2B00;
+	margin: 0 45% 0 0;
+} 
+
+.images ul{
+	list-style-type: none;
+}
+
+.images li{
+	position: relative;
+	left: -70px;
+	top: 30px;
+	float: left;
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.images img:hover{
+   -webkit-transform:scale(1.25);
+}
+
+/*Styles for feed*/
+#wrapper #leftCol input{
+	width: 40%;
+	margin-left: 30%;
+	margin-bottom: 10px;
+	float: left;
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	color: orange; 
+	font-size: 1.2em;
+}
+#wrapper #leftCol input: focus{
+	border: 2px solid red;
+}
+#wrapper #leftCol textarea{
+	width: 40%;
+	height: 170px;
+	margin-left: 30%;
+	margin-bottom: 10px;
+	float: left;
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	color: orange; 
+	font-size: 1.2em;
+	resize: none;
+}
+
+#wrapper #leftCol #messageShow{
+	font-size: 1.2em;
+	float: left;
+	color: red;
+	width: 100%;
+	text-align: center;
+}
