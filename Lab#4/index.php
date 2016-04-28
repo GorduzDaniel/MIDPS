@@ -1,13 +1,10 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 
 	<title>Incredible Life</title>
 	<link rel="stylesheet" type="text/css" href="style/main.css">
-	<?php
-	require_once "functions/functions.php"
-	$news =getNews(3);
-?>
 </head>
 <body>
 		<h1>Incredible Wildlife</h1>
@@ -59,14 +56,14 @@
 			So, how does this translate to the superhero realm? One, gaining ostrich powers means your uniform requires some seriously creative tailoring, and two, said powers give you the ability to kick directly forward with a force of 2,000 freaking pounds per square inch. To put that in context, a professional heavyweight boxer can hit at some 800 pounds per square inch. So the Ostrich Kick is the equivalent of roughly 2.5 Mike Tysons delivering their best knockout punch, in the same spot, at the exact same time. Except instead of a nice, soft boxing glove, the whole of the impact will be delivered with those 4-inch talons. Did you forget about those? The ostrich didn't.
 		</p>
 		<?php
-			for($i =0; $i<count($news); $i++){
-				echo "<p class=\"order\">"; 
-				echo "<br>
-			This is a great example right here, because apparently owls can't do shit, if comic books are our guide. While there are several owl-themed superheroes and villains in existence, they tend to be thinly veiled Batman knockoffs with no powers to speak of. Even the superpowered ones usually possess some rather sad and useless power, such as Owlman's ability to 'cause confusion.'
-			<br><br>
-			Well, all we can say to that is comic book writers need to open a damned encyclopedia every now and then. We mean, look at the creature we're dealing with here. Besides having the best night vision of all birds, owls also have a satellite dish built into their face. The circular pattern of feathers on there? Yeah, that acts as a dish, focusing the sound and giving them what may be the best directional hearing in the world. And even weirder, those feather patterns can also, no kidding, be individually adjusted to increase reception.<br><br>
-			And keep in mind, we're talking about a nocturnal hunter -- they're using this finely tuned sense of hearing to take down prey that the owl can't even see. So, basically we're looking at a flying Daredevil but with a slew of built-in razor blades on its hands a la Wolverine. <br><br>
-			To demonstrate how these powers would be handy fighting crime, we'd like to show you the following video. imagine that the lemming is crime:<br>";
+			$connection = new mysqli("localhost", "root", "");
+			mysqli_select_db($connection, "article");
+			$result = $connection->query("SELECT * FROM title"); 
+			if($result->num_rows){
+				while($row= $result->fetch_assoc()) {
+					echo $row["full_text"];
+					echo $row["title"];
+				}
 			}
 		?>
 		<footer>

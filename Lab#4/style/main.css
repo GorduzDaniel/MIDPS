@@ -110,3 +110,7 @@ p.order {
 	width: 100%;
 	text-align: center;
 }
+
+#rights{
+	float: right;
+}
