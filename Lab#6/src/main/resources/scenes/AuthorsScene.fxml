@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.learning.Symphonia.Scene.AuthorsSceneController">
+   <children>
+      <ImageView fitHeight="447.0" fitWidth="800.0" layoutX="8.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/background.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="230.0" fitWidth="240.0" layoutX="40.0" layoutY="110.0" onMouseClicked="#onMouseClickedBeethoven" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/beethoven.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="230.0" fitWidth="240.0" layoutX="290.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/chopin.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="230.0" fitWidth="240.0" layoutX="540.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/mozart.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="60.0" layoutY="18.0" text="Beethoven">
+         <font>
+            <Font name="ChopinScript" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="334.0" layoutY="18.0" text="Chopin">
+         <font>
+            <Font name="ChopinScript" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="579.0" layoutY="18.0" text="Mozart">
+         <font>
+            <Font name="ChopinScript" size="50.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
